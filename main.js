@@ -4,7 +4,7 @@ window.addEventListener(
     // javascript enabled ..
     document.body.removeChild(document.body.children[0]);
     // Prepare the dictionary ..
-    Edict.entries.sort(Edict.sortByReading);
+    //Edict.entries.sort(Edict.sortByReading);
     Edict.makeIndex();
     // EdictBrowser.app ..
     var eb = new EdictBrowser();
