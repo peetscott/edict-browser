@@ -98,7 +98,8 @@ public class Setup  {
               bw.write("\"");
               // Double quotes won't work in JavaScript string.
               // Convert to single quote:
-              splitLine[1] = splitLine[1].replace("\"", "'");
+              //splitLine[1] = splitLine[1].replace("\"", "'");
+              splitLine[1] = splitLine[1].replace("\"", "\\\"");
               bw.write(splitLine[1]);
               bw.write("\"");
           }
@@ -204,7 +205,8 @@ public class Setup  {
             bw.write("\"");
             // Double quotes won't work in JavaScript string.
             // Convert to single quote:
-            splitLine[1] = splitLine[1].replace("\"", "'");
+            //splitLine[1] = splitLine[1].replace("\"", "'");
+            splitLine[1] = splitLine[1].replace("\"", "\\\"");
             bw.write(splitLine[1]);
             bw.write("\"");
         }
