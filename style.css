@@ -69,6 +69,13 @@
 /**********************************/
 
 .eb-page  {
+  /*
+  The scrollbar is causing the page to be redrawn in the middle
+  of the column-building routine, breaking the column-height
+  calculation. This forces the scrollbar to be permanently
+  deployed.
+  */
+  height: 704px;
   /*background-color: goldenrod;*/
 }
 
